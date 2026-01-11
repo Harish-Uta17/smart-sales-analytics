@@ -1,3 +1,8 @@
+## 🚀 Live Demo
+👉 [https://smart-sales-analytics.streamlit.app](https://smart-sales-analytics-xbjhl3hehextqwpbdpv4qv.streamlit.app/)
+
+
+
 # 📊 Smart Sales Analytics & Revenue Forecasting Platform
 
 An end-to-end enterprise-grade sales analytics system that performs real-time business intelligence and machine-learning-based revenue forecasting using PostgreSQL, Python, SQL, and Streamlit.
