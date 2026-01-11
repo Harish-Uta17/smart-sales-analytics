@@ -301,7 +301,7 @@ def get_kpi_data(filter_sql):
             SUM(s.quantity * p.price) AS revenue,
             COUNT(DISTINCT s.customer_id) AS customers,
             SUM(s.quantity) AS total_quantity,
-            COUNT(DISTINCT s.sales_id) AS total_orders
+            COUNT(DISTINCT s.sale_id) AS total_orders
         FROM sales s 
         JOIN products p ON s.product_id = p.product_id
         JOIN customers c ON s.customer_id = c.customer_id
