@@ -18,9 +18,14 @@ st.set_page_config(
 
 # ==================== DATABASE & MODEL INITIALIZATION ====================
 @st.cache_resource
+@st.cache_resource
 def init_connection():
-    """Initialize database connection with connection pooling"""
-    return create_engine("postgresql+psycopg2://postgres:9913933238@localhost/demo", pool_pre_ping=True)
+    return create_engine(
+        st.secrets["DB_URL"],
+        pool_pre_ping=True,
+        pool_recycle=300
+    )
+
 
 @st.cache_resource
 def load_model():
